@@ -1,0 +1,128 @@
+---
+layout: default
+photos: []
+---
+{% case page.name == 'thornton.md' %}
+  {% when 'thornton.md' %}
+    {% assign photos = 'thornton-bedroom-1-extralarge.jpg,thornton-bedroom-2-extralarge.jpg,thornton-diningroom-1-extralarge.jpg,thornton-diningroom-2-extralarge.jpg,thornton-hallway-1-extralarge.jpg,thornton-hallway-2-extralarge.jpg,thornton-hallway-3-extralarge.jpg,thornton-kitchen-1-extralarge.jpg,thornton-kitchen-2-extralarge.jpg,thornton-kitchen-3-extralarge.jpg,thornton-kitchen-4-extralarge.jpg,thornton-livingroom-1-extralarge.jpg,thornton-livingroom-2-extralarge.jpg,thornton-livingroom-3-extralarge.jpg,thornton-livingroom-4-extralarge.jpg,thornton-primary-bathroom-1-extralarge.jpg,thornton-primary-bathroom-3-extralarge.jpg,thornton-primary-bathroom-4-extralarge.jpg,thornton-primary-bathroom-5-extralarge.jpg,thornton-primary-bathroom-6-extralarge.jpg,thornton-primary-bathroom-7-extralarge.jpg,thornton-primary-bathroom-8-extralarge.jpg' | split: ',' %}
+    {% assign header_photo = 'thornton-bedroom-2-extralarge.jpg' %}
+  {% when 'jell-and-chill.md' %}
+
+    {% assign photos = 'jell-and-chill-1-extralarge.jpg,jell-and-chill-2-extralarge.jpg,jell-and-chill-3-extralarge.jpg,jell-and-chill-4-extralarge.jpg,jell-and-chill-5-extralarge.jpg,jell-and-chill-6-extralarge.jpg' | split: ',' %}
+    {% assign header_photo = 'jell-and-chill-2-extralarge.jpg' %}
+  {% when 'began.md' %}
+
+    {% assign photos = 'began-guest-bathroom-1-extralarge.jpg,began-guest-bathroom-2-extralarge.jpg,began-guest-bathroom-3-extralarge.jpg,began-kitchen-1-extralarge.jpg,began-kitchen-2-extralarge.jpg,began-kitchen-3-extralarge.jpg,began-kitchen-4-extralarge.jpg,began-primary-bathroom-1-extralarge.jpg,began-primary-bathroom-2-extralarge.jpg,began-primary-bathroom-3-extralarge.jpg,began-primary-bathroom-4-extralarge.jpg' | split: ',' %}
+    {% assign header_photo = 'began-kitchen-2-extralarge.jpg' %}
+{% endcase %}
+
+        <div id="content" class="site-content">
+          <div class="page-header dtable text-center header-transparent pheader-portfolio-detail" style="background-image: url(/assets/image/custom/{{ header_photo }});">
+                <div class="dcell">
+                    <div class="container">
+                      <div class="header-background"><h1 class="page-title">{{ page.title }}</h1></div>
+                    </div>
+                </div>
+            </div>
+            <section class="portfolio-detail p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="space-90"></div>
+                            <div class="gallery-post img-slider owl-carousel owl-theme">
+                                {% for photo in photos %}
+                                  <div class="item-image" style="background-image: url(/assets/image/custom/{{ photo }});"></div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="space-60"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>architect:</h6>
+                                <p>David Oswald</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>client:</h6>
+                                <p>OceanThemes</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>Terms::</h6>
+                                <p>6 month</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>project type::</h6>
+                                <p>Interior Design</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>Strategy::</h6>
+                                <p>Minimalistic</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="p-detail-info">
+                                <h6>date::</h6>
+                                <p>November 22, 2020</p>
+                            </div>
+                        </div>
+                        <div class="space-30"></div>
+                        <div class="col-lg-12">
+                            <p><span class="drop-cap"><span class="drop-cap-letter">C</span></span>onsidering the physical, mental, and emotional needs of people, interior designers use human-centered approaches to address how we live today. Creating novel approaches to promoting health, safety, and welfare, contemporary interiors are increasingly inspired by biophilia as a holistic approach to promoting health, safety, and welfare, contemporary interiors are increasingly inspired by biophilia as a holistic approach to design. By definition, interior design encompasses diverse aspects of our environment. The discipline extends to building materials and finishes; casework, furniture.</p>
+                            <p><strong>Biophilia is the idea that humans possess an innate tendency to seek connections with nature.</strong> The term translates to ‘the love of living things’ in ancient Greek (philia = the love of / inclination towards), and was used by German-born American psychoanalyst Erich Fromm in The Anatomy of Human Destructiveness (1973), which described biophilia as “the passionate love of life and of all that is alive.” The term was later used by American biologist Edward O. Wilson in his work Biophilia (1984), which proposed that the tendency of humans to focus on and to affiliate with nature and other life-forvms.</p>
+                            <div class="space-20"></div>
+                            <div class="space-5"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Design in Details</h4>
+                            <p>In design, we bring characteristics of the natural world into built spaces, such as water, greenery, and natural light, or elements like wood and stone. Encouraging the use of natural systems and processes in design allows for exposure to nature, and in turn, these design approaches improve health and wellbeing. There are a number of possible benefits, including reduced heart rate variability and pulse rates, decreased blood pressure, and increased activity in our nervous systems, to name a few.</p>
+                            <p>Over time, our connections to the natural world diverged in parallel with technological developments. Advances in the 19th and 20th centuries fundamentally changed how people interact with nature. Sheltered from the elements, we spent more and more time indoors. Today, the majority of people spend almost 80-90% of their time indoors, moving between their homes and workplaces. As interior designers embrace biophilia.</p>
+                            <div class="space-20"></div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-5 mb-lg-0">
+                                    <div class="room-area">
+                                        <h3>[30m<sup>2</sup>]</h3>
+                                        <h6>bedroom</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-5 mb-lg-0">
+                                    <div class="room-area">
+                                        <h3>[22m<sup>2</sup>]</h3>
+                                        <h6>bedroom</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="room-area">
+                                        <h3>[28m<sup>2</sup>]</h3>
+                                        <h6>workspace</h6>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                                    <div class="room-area">
+                                        <h3>[28m<sup>2</sup>]</h3>
+                                        <h6>kitchen area</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-50"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>Incredible Result</h4>
+                                    <p>Establishing multi-sensory experiences, we can design interiors that resonate across ages and demographics. These rooms and spaces connects us to nature as a proven way to inspire us, boost our productivity, and create greater well-being. Beyond these benefits, by reducing stress and enhancing creativity, we can also expedite healing. In our increasingly urbanized cities, biophilia advocates a more humanistic approach to design. <span><strong>The result is biophilic interiors that celebrate how we live, work and learn with nature.&nbsp;</strong></span>The term translates to ‘the love of living things’ in ancient Greek (philia = the love of / inclination towards), and was used by German-born American psychoanalyst Erich Fromm in The Anatomy of Human Destru ctiveness (1973).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
