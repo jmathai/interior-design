@@ -2106,9 +2106,15 @@ a:hover, a:active {
 
   .header_mobile .mlogo_wrapper {
     position: relative;
+    padding: 10px;
+  }
+  .header_mobile .mlogo_wrapper .name {
+    padding:0;
+    line-height: 1em;
   }
   .header_mobile .mlogo_wrapper img {
-    height: 90px;
+    height: 75px;
+    margin-bottom: 3px;
   }
 
   .header_mobile .mlogo_wrapper .mobile_logo {
@@ -7153,7 +7159,7 @@ div.elementor-widget-heading .elementor-heading-title {
     padding-right: 15px;
 }
 .header_mobile .mlogo_wrapper img {
-    height: 76px;
+    height: 64px;
 }
 .header_mobile .octf-row{
     display: flex;
@@ -8526,6 +8532,9 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .bg-dark-theratio {
     background-color: #0A0A0A;
 }
+.bg-black-theratio {
+  background-color: #000;
+}
 /* Index 2 */
 .octf-mainbar-row .octf-col.logo-col {
     flex-grow: 0.2;
@@ -8584,9 +8593,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .about-content-2 .ot-heading {
     margin: 0 -22px 0 0;
     padding: 75px 10px 22px 0;
-    background-image: url(https://via.placeholder.com/156x142.png);
+    background-image: url(assets/image/logo-white-on-black.png);
     background-position: 100% 12%;
     background-repeat: no-repeat;
+    background-size: 130px;
 }
 .cta-2 {
     background-image: url(https://via.placeholder.com/1920x1000.png);
@@ -9370,6 +9380,19 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   .p-md-80 {
       padding: 80px;
   }
+  .about-img-2 {
+      margin: 0 0 0 -375px
+  }
+  .about-img-2 div.img {
+      display: flex;
+      background-image: url(assets/image/profile.jpg);
+      background-size: cover;
+      width: 943px;
+      height: 803px;
+  }
+  .about-img-2 img {
+      display:none;
+  }
 }
 @media (min-width: 992px){
   .contact-page {
@@ -9713,6 +9736,13 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   .benefits-sidebar .ot-heading h2 {
     line-height: 38px;
   }
+  .about-img-2 div.img {
+      display: none;
+  }
+  .about-img-2 img {
+      display:flex;
+  }
+
 }
 @media (max-width: 480px) {
   .feature-wrap .feature-item {

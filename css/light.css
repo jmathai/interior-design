@@ -39,13 +39,13 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(https://via.placeholder.com/1920x505.png);
 }
 .cta-2 {
-    background-image: url(../assets/image/custom/thornton-diningroom-1-large.jpg);
+    background-image: url(../assets/image/cta-2-bg.jpg);
 }
 .cta-2 h2 {
-	color: #1a1a1a;
+	color: #ccc;
 }
 .cta-2 p {
-	color: #4D4D4D;
+	color: #ccc;
 }
 .main-color-stext {
 	color: #555;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: #1A1A1A;
 }
 .widget-footer h6 {
-	color: #1A1A1A;
+	color: inherit;
 }
 .footer-side-nav p, .footer-bottom li a {
 	color: #555555;
