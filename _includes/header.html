@@ -98,7 +98,6 @@
                                                                 <li class="{% if page.url == '/portfolio/began' %} current-menu-item {% endif %}"><a href="/portfolio/began">Began</a></li>
                                                             </ul>
                                                         </li>
-                                                        <li class="/about"><a href="blog.html">About</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -117,10 +116,8 @@
                             <div class="mlogo_wrapper clearfix">
                                 <div class="mobile_logo">
                                     <a>
-                                      <img src="assets/image/logo-profile-black-on-white.png" alt="">
+                                      <img src="assets/image/logo-white-on-green-header.png" alt="">
                                     </a>
-                                    <div class="name">Rachel Mathai</div>
-                                    <div class="name">Interior Design</div>
                                 </div>
                             </div>
                         </div>
@@ -135,10 +132,16 @@
                                       <a class="mmenu-close" href="#"><i class="ot-flaticon-right-arrow"></i></a>
                                         <div class="mobile-nav">
                                             <ul id="menu-main-menu" class="mobile_mainmenu none-style">
-                                                <li class="current-menu-item current-menu-ancestor">
-                                                    <a href="index.html">Home</a></li>
-                                                <li class=""><a href="#">Portfolio</a></li>
-                                                <li class=""><a href="blog.html">About</a></li>
+                                                <li class="{% if page.url == '/' %} current-menu-item current-menu-ancestor {% endif %}">
+                                                    <a href="/">Home</a></li>
+                                                <li class="menu-item-has-children {% if page.url contains '/portfolio' %} current-menu-item current-menu-ancestor {% endif %}">
+                                                  <a href="/portfolio/thornton">Portfolio</a>
+                                                  <ul class="sub-menu">
+                                                      <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton">Thornton</a></li>
+                                                      <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill">Jell &amp; Chill</a></li>
+                                                      <li class="{% if page.url == '/portfolio/began' %} current-menu-item {% endif %}"><a href="/portfolio/began">Began</a></li>
+                                                  </ul>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
