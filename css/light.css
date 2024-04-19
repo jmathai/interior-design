@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: repeat;
   background-size: 115px;
   padding: 33px 0;
-  filter: grayscale(1);
+  /*filter: grayscale(1);*/
 }
 .top-header::before {
 }
