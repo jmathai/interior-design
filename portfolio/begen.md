@@ -1,5 +1,5 @@
 ---
-permalink: /portfolio/began
+permalink: /portfolio/begen
 layout: portfolio
 ---
 
