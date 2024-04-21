@@ -9320,7 +9320,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 @media (max-width: 767px){
   .cta-2 h2 {
-    font-size: 65px;
+    font-size: 55px;
   }
 }
 @media (min-width: 567px){
