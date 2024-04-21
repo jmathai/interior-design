@@ -7248,7 +7248,7 @@ section {
   background-image: url('https://via.placeholder.com/1920x500.png');
 }
 .pheader-team {
-  background-image: url('https://via.placeholder.com/1920x500.png');
+  background-image: url('/assets/image/custom/congress-run-rug-extralarge.jpg');
 }
 .pheader-services {
     background-image: url(https://via.placeholder.com/1920x500.png);
@@ -7536,6 +7536,11 @@ section {
 }
 .about-testi .ot-heading{
     margin-bottom: 50px;
+}
+.about-underlay {
+  background-color: #000;
+  opacity: .5;
+  padding-bottom: 15px;
 }
 /* Our Team */
 .skill-content .ot-heading {
@@ -8611,11 +8616,12 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .cta-2 h2 {
     color: #FFF;
     font-family: "Titillium Web",Sans-serif;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 200;
     margin-bottom: 15px;
     line-height: 1;
 }
+
 .cta-2 p {
     color: #FFF;
     font-size: 20px;
@@ -9309,6 +9315,11 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 @media (max-width: 1024px){
   .cta-2 h2 {
     font-size: 85px;
+  }
+}
+@media (max-width: 767px){
+  .cta-2 h2 {
+    font-size: 65px;
   }
 }
 @media (min-width: 567px){
