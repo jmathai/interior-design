@@ -8106,6 +8106,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     margin-bottom: 20px;
     line-height: 1;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 .p-detail-info p {
     color: #1a1a1a;
