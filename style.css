@@ -7209,7 +7209,8 @@ div.elementor-widget-heading .elementor-heading-title {
   display: table;
 }
 .gallery-columns-2 .gallery-item {
-  width: 50%;
+  /*width: 50%;*/
+  width: 49%;
 }
 @media (max-width: 767px){
   .gallery-columns-2 .gallery-item {
@@ -10369,4 +10370,14 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+
+.house-proud .pheader-portfolio-detail {
+   background-position: 0 -330px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .house-proud .pheader-portfolio-detail {
+     background-position: 0 0;
+  }
 }
