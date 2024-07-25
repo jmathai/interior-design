@@ -1362,8 +1362,8 @@ a:hover, a:active {
 }
 
 /* jm */
-.site-content a {
-  color: #6b8f69;
+.site-content a, .acc-toggle {
+  color: #6b8f69 !important;
   text-decoration: underline;
 }
 
