@@ -1361,6 +1361,12 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* jm */
+.site-content a {
+  color: #6b8f69;
+  text-decoration: underline;
+}
+
 .dark-scheme a {
   color: #fff;
 }
