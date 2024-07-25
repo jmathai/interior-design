@@ -3668,7 +3668,9 @@ object {
 }
 
 .gallery-columns-4 .gallery-item {
-  max-width: 25%;
+  /* jm */
+  /*max-width: 25%;*/
+  max-width: 24.6%;
 }
 
 .gallery-columns-5 .gallery-item {
@@ -4032,7 +4034,8 @@ object {
   margin-bottom: 10px;
 }
 .service-box:hover .image-box .overlay {
-  opacity: 1;
+  /* jm */
+  /*opacity: 1;*/
 }
 .service-box:hover .image-box img {
   -webkit-transform: scale(1.02);
@@ -4529,7 +4532,9 @@ object {
 }
 .ot-accordions .acc-item .acc-toggle {
   cursor: pointer;
-  justify-content: space-between;
+  /*jm*/
+  /*justify-content: space-between;*/
+  justify-content: left;
   overflow: hidden;
   font-family: "Titillium Web", sans-serif;
   font-size: 20px;
@@ -4547,6 +4552,8 @@ object {
   line-height: 30px;
   font-size: 10px;
   color: #1a1a1a;
+  /*jm*/
+  padding-right: 10px;
 }
 .ot-accordions .acc-item .acc-toggle i.up {
   display: none;
@@ -7210,7 +7217,7 @@ div.elementor-widget-heading .elementor-heading-title {
 }
 .gallery-columns-2 .gallery-item {
   /*width: 50%;*/
-  width: 49%;
+  width: 49.8%;
 }
 @media (max-width: 767px){
   .gallery-columns-2 .gallery-item {
