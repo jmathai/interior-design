@@ -10386,11 +10386,11 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 
 
-.house-proud .pheader-portfolio-detail {
+.house-proud.wyoming-colonial-revival .pheader-portfolio-detail {
    background-position: 0 -330px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .house-proud .pheader-portfolio-detail {
+  .house-proud.wyoming-colonial-revival .pheader-portfolio-detail {
      background-position: 0 0;
   }
 }

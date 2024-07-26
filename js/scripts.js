@@ -588,7 +588,7 @@
     /* --------------------------------------------------
     * image gallery
     * --------------------------------------------------*/
-    $('.image-gallery').each( function(){
+    $('.image-gallery:not(.omit-lightgallery)').each( function(){
         var selector = $(this),
             popup   = selector.find('.gallery-icon > a');
         popup.append('<a href="#" class="overlay"><i class="ot-flaticon-add"></i></a>');
