@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:title" content="Rachel Mathai Interior Design" />
     <base href="/">
-
-    <meta property="og:image" content="assets/image/logo-white-on-green.png" />
+    {% if page.og_image %}
+      <meta property="og:image" content="{{ page.og_image }}" />
+    {% else %}
+      <meta property="og:image" content="assets/image/logo-white-on-green.png" />
+    {% endif %}
 
     <title>Rachel Mathai Interior Design</title>
 
@@ -100,6 +103,8 @@
                                                                 <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen">Begen</a></li>
                                                             </ul>
                                                         </li>
+                                                      <li class="">
+                                                            <a href="/house-proud/wyoming">House Proud</a></li>
                                                       <li class="">
                                                             <a href="/about">About</a></li>
                                                     </ul>
