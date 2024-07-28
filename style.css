@@ -10385,6 +10385,12 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   margin-top: 30px;
 }
 
+.house-proud h1:not(.page-title) {
+  font-size:2em;
+}
+.house-proud h2 {
+  font-size: 1.6em;
+}
 
 .house-proud.wyoming-colonial-revival .pheader-portfolio-detail {
   background-position: 0px -325px;
