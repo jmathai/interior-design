@@ -46,8 +46,6 @@
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">   
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
-
-    <script defer async data-host="rachelmathai.com" src="https://liteanalytics.com/lite.js"></script>
 </head>
 
 <body>
@@ -67,7 +65,7 @@
                             </div>
                             <div class="col-lg-4 text-center">
                                 <div class="top-logo">
-                                    <a href="/">
+                                    <a href="/" data-lta-event="nav-logo">
                                       <img src="assets/image/logo-green-on-white-black-letters-horizontal.png" alt="">
                                     </a>
                                 </div>
@@ -75,7 +73,7 @@
                             <!--<div class="col-lg-4">
                                 <div class="top-info text-right">
                                     <h6>Email Me:</h6>
-                                    <p><a href="mailto:hello@rachelmathai.com">hello@rachelmathai.com</a></p>
+                                    <p><a href="mailto:hello@rachelmathai.com" data-lta-event="nav-email">hello@rachelmathai.com</a></p>
                                 </div>
                             </div>-->
                         </div>
@@ -100,19 +98,19 @@
                                                 <nav id="site-navigation" class="main-navigation">
                                                     <ul class="menu">
                                                       <li class="">
-                                                            <a href="/">Home</a></li>
+                                                            <a href="/" data-lta-event="nav-home">Home</a></li>
                                                       <li class="menu-item-has-children ">
-                                                          <a href="/portfolio/thornton">Portfolio</a>
+                                                          <a href="/portfolio/thornton" data-lta-event="nav-portfolio">Portfolio</a>
                                                             <ul class="sub-menu">
-                                                                <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton">Thornton</a></li>
-                                                                <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill">Jell &amp; Chill</a></li>
-                                                                <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen">Begen</a></li>
+                                                                <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton" data-lta-event="nav-portfolio-thornton">Thornton</a></li>
+                                                                <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-portfolio-jellandchill">Jell &amp; Chill</a></li>
+                                                                <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen" data-lta-event="nav-portfolio-began">Begen</a></li>
                                                             </ul>
                                                         </li>
                                                       <li class="">
-                                                            <a href="/house-proud/wyoming">House Proud</a></li>
+                                                            <a href="/house-proud/wyoming" data-lta-event="nav-houseproud">House Proud</a></li>
                                                       <li class="">
-                                                            <a href="/about">About</a></li>
+                                                            <a href="/about" data-lta-event="nav-about">About</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>
@@ -130,7 +128,7 @@
                         <div class="octf-col">
                             <div class="mlogo_wrapper clearfix">
                                 <div class="mobile_logo">
-                                    <a href="/">
+                                    <a href="/" data-lta-event="nav-mobile-logo">
                                       <img src="assets/image/logo-white-on-green-horizontal.png" alt="">
                                     </a>
                                 </div>
@@ -144,23 +142,23 @@
                                 <div class="site-overlay mmenu-overlay"></div>
                                 <div id="mmenu-wrapper" class="mmenu-wrapper on-right">
                                     <div class="mmenu-inner">
-                                      <a class="mmenu-close" href="#"><i class="ot-flaticon-right-arrow"></i></a>
+                                      <a class="mmenu-close" href="#" data-lta-event="nav-mobile-close"><i class="ot-flaticon-right-arrow"></i></a>
                                         <div class="mobile-nav">
                                             <ul id="menu-main-menu" class="mobile_mainmenu none-style">
                                                 <li class="{% if page.url == '/' %} current-menu-item current-menu-ancestor {% endif %}">
-                                                    <a href="/">Home</a></li>
+                                                    <a href="/" data-lta-event="nav-mobile-home">Home</a></li>
                                                 <li class="menu-item-has-children current-menu-item current-menu-ancestor">
                                                   <a>Portfolio</a>
                                                   <ul class="sub-menu d-block">
-                                                      <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton">Thornton</a></li>
-                                                      <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill">Jell &amp; Chill</a></li>
-                                                      <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen">Begen</a></li>
+                                                      <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton" data-lta-event="nav-mobile-thornton">Thornton</a></li>
+                                                      <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-mobile-jellandchill">Jell &amp; Chill</a></li>
+                                                      <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen" data-lta-event="nav-mobile-began">Begen</a></li>
                                                   </ul>
                                                 </li>
                                                 <li class="">
-                                                      <a href="/house-proud/wyoming">House Proud</a></li>
+                                                      <a href="/house-proud/wyoming" data-lta-event="nav-mobile-houseproud">House Proud</a></li>
                                                 <li class="">
-                                                      <a href="/about">About</a></li>
+                                                      <a href="/about" data-lta-event="nav-mobile-about">About</a></li>
                                             </ul>
                                         </div>
                                     </div>
