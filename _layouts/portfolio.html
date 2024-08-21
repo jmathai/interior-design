@@ -4,24 +4,48 @@ photos: []
 ---
 {% case page.name == 'thornton.md' %}
   {% when 'thornton.md' %}
-    {% assign photos = 'thornton-livingroom-3-extralarge.jpg,thornton-livingroom-4-extralarge.jpg,thornton-diningroom-1-extralarge.jpg,thornton-diningroom-2-extralarge.jpg,thornton-kitchen-1-extralarge.jpg,thornton-kitchen-3-extralarge.jpg,thornton-kitchen-4-extralarge.jpg,thornton-hallway-1-extralarge.jpg,thornton-bedroom-1-extralarge.jpg,thornton-bedroom-2-extralarge.jpg,thornton-primary-bathroom-1-extralarge.jpg,thornton-primary-bathroom-3-extralarge.jpg,thornton-primary-bathroom-4-extralarge.jpg,thornton-primary-bathroom-8-extralarge.jpg,thornton-primary-bathroom-7-extralarge.jpg,thornton-hallway-2-extralarge.jpg,thornton-livingroom-1-extralarge.jpg' | split: ',' %}
+
     {% assign header_photo = 'thornton-diningroom-1-extralarge.jpg' %}
+    {% assign photos = '' | split: '' %}
+    {% assign photos1 = 'thornton-livingroom-3-extralarge.jpg,thornton-livingroom-4-extralarge.jpg' | split: ',' %}
+    {% assign photos2 = 'thornton-diningroom-1-extralarge.jpg' | split: ',' %}
+    {% assign photos3 = 'thornton-diningroom-2-extralarge.jpg,thornton-kitchen-1-extralarge.jpg,thornton-kitchen-3-extralarge.jpg' | split: ',' %}
+    {% assign photos4 = 'thornton-kitchen-4-extralarge.jpg' | split: ',' %}
+    {% assign photos5 = 'thornton-hallway-1-extralarge.jpg' | split: ',' %}
+    {% assign photos6 = 'thornton-bedroom-1-extralarge.jpg,thornton-bedroom-2-extralarge.jpg' | split: ',' %}
+    {% assign photos7 = 'thornton-primary-bathroom-1-extralarge.jpg' | split: ',' %}
+    {% assign photos8 = 'thornton-primary-bathroom-3-extralarge.jpg' | split: ',' %}
+    {% assign photos9 = 'thornton-primary-bathroom-4-extralarge.jpg,thornton-primary-bathroom-8-extralarge.jpg,thornton-primary-bathroom-7-extralarge.jpg' | split: ',' %}
+    {% assign photos10 = 'thornton-hallway-2-extralarge.jpg' | split: ',' %}
+    {% assign photos11 = 'thornton-livingroom-1-extralarge.jpg' | split: ',' %}
+    {% assign photos = photos | push: photos1 | push: photos2 | push: photos3 | push: photos4 | push: photos6 | push: photos7 | push: photos8 | push: photos9 | push: photos10 | push: photos11 %}
     {% assign project_designer = 'Rachel Mathai' %}
     {% assign project_type = 'Home Addition + Interior Remodel' %}
     {% assign project_date = 'May 2022' %}
     {% assign project_scope = 'Space planning and design of 900 sf home addition which included a relocated kitchen, great room, primary bedroom and bathroom with walk in closet. Remodeled existing laundry room to create a functional mudroom with secondary side entrance to house. Replaced all interior doors and hardware as well as casing and trim. Interior and exterior paint selections.' %}
   {% when 'jell-and-chill.md' %}
 
-    {% assign photos = 'jell-and-chill-1-extralarge.jpg,jell-and-chill-2-extralarge.jpg,jell-and-chill-3-extralarge.jpg,jell-and-chill-4-extralarge.jpg,jell-and-chill-5-extralarge.jpg,jell-and-chill-6-extralarge.jpg' | split: ',' %}
     {% assign header_photo = 'jell-and-chill-2-extralarge.jpg' %}
+    {% assign photos = '' | split: '' %}
+    {% assign photos1 = 'jell-and-chill-1-extralarge.jpg,jell-and-chill-2-extralarge.jpg' | split: ',' %}
+    {% assign photos2 = 'jell-and-chill-6-extralarge.jpg' | split: ',' %}
+    {% assign photos3 = 'jell-and-chill-3-extralarge.jpg,jell-and-chill-5-extralarge.jpg' | split: ',' %}
+    {% assign photos = photos | push: photos1 | push: photos2 | push: photos3 %}
     {% assign project_designer = 'Rachel Mathai + LeLe Yu' %}
     {% assign project_type = 'Commercial Design of Mall Kiosk' %}
     {% assign project_date = 'May 2023' %}
     {% assign project_scope = 'Designed mall kiosk for growing smoothie shop. Created construction documents and renderings for mall approval. Worked with mall designers for approval of all selected finish materials. Procured signage, display screens and point of sale devices.' %}
   {% when 'begen.md' %}
 
-    {% assign photos = 'began-kitchen-1-extralarge.jpg,began-kitchen-2-extralarge.jpg,began-kitchen-3-extralarge.jpg,began-kitchen-4-extralarge.jpg,began-primary-bathroom-1-extralarge.jpg,began-primary-bathroom-2-extralarge.jpg,began-primary-bathroom-3-extralarge.jpg,began-primary-bathroom-4-extralarge.jpg,began-guest-bathroom-3-extralarge.jpg,began-guest-bathroom-2-extralarge.jpg' | split: ',' %}
     {% assign header_photo = 'began-kitchen-3-extralarge.jpg' %}
+    {% assign photos = '' | split: '' %}
+    {% assign photos1 = 'began-kitchen-1-extralarge.jpg,began-kitchen-2-extralarge.jpg,began-kitchen-3-extralarge.jpg' | split: ',' %}
+    {% assign photos2 = 'began-kitchen-4-extralarge.jpg' | split: ',' %}
+    {% assign photos3 = 'began-primary-bathroom-1-extralarge.jpg,began-primary-bathroom-2-extralarge.jpg' | split: ',' %}
+    {% assign photos4 = 'began-primary-bathroom-3-extralarge.jpg,began-primary-bathroom-4-extralarge.jpg' | split: ',' %}
+    {% assign photos5 = 'began-guest-bathroom-3-extralarge.jpg' | split: ',' %}
+    {% assign photos6 = 'began-guest-bathroom-2-extralarge.jpg' | split: ',' %}
+    {% assign photos = photos | push: photos1 | push: photos2 | push: photos3 | push: photos4 | push: photos5 | push: photos6 %}
     {% assign project_designer = 'Rachel Mathai' %}
     {% assign project_type = 'Interior Remodel + Permitting' %}
     {% assign project_date = 'May 2023' %}
@@ -39,18 +63,8 @@ Submitted necessary documents for permitting including all construction document
             </div>
             <section class="portfolio-detail p-0">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="space-90"></div>
-                            <div class="gallery-post img-slider owl-carousel owl-theme">
-                                {% for photo in photos %}
-                                  <div class="item-image" style="background-image: url(/assets/image/custom/{{ photo }});"></div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class="space-60"></div>
-                    </div>
                     <div class="row text-center">
+                        <div class="space-40"></div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-none d-lg-block"></div>
                         <div class="col-lg-2 col-md-4 col-sm-12 col-4">
                             <div class="p-detail-info">
@@ -77,9 +91,29 @@ Submitted necessary documents for permitting including all construction document
                         <div class="col-lg-12">
                             <h4>Project Scope</h4>
                             <p>{{ project_scope }}.</p>
-                            <div class="space-20"></div>
-                            <div class="space-5"></div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 image-gallery">
+                            <div class="space-10"></div>
+                            <!--{{ photos | jsonify }}-->
+                            {% for row in photos %}
+                              <div class="">
+                                <div class="gallery gallery-columns-{{ row | size }} gallery-size-thumbnail">
+                                    {% for photo in row %}
+                                      <figure class="gallery-item">
+                                          <div class="gallery-icon landscape">
+                                              <a href="/assets/image/custom/{{ photo }}">
+                                                  <img src="/assets/image/custom/{{ photo }}" class="" alt="">
+                                              </a>
+                                          </div>
+                                      </figure>
+                                      {% endfor %}
+                                  </div>
+                              </div>
+                            {% endfor %}
+                        </div>
+                        <div class="space-60"></div>
                     </div>
                 </div>
             </section>
