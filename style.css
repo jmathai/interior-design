@@ -3323,7 +3323,7 @@ a:hover, a:active {
 }
 .widget-area .widget_nav_menu ul li.current-menu-item a {
   color: #fff;
-  background: #1a1a1a;
+  background: #aaa;
 }
 
 .widget .recent-news li:not(:last-child) {
@@ -3871,6 +3871,8 @@ object {
 }
 .icon-box h5 a {
   color: #1a1a1a;
+  /* jm */
+  font-size: 1.1rem;
 }
 .icon-box p {
   margin-bottom: 13px;
@@ -4014,6 +4016,9 @@ object {
 /*--------------------------------------------------------------
 ## Service Box
 --------------------------------------------------------------*/
+.services h1 {
+  font-size: 1.8rem;
+}
 .service-box .image-box {
   position: relative;
   overflow: hidden;
@@ -7503,6 +7508,9 @@ section {
     line-height: 60px;
 }
 /* About Us */
+.about h1 {
+  font-size: 1.8rem;
+}
 .about-detail .ot-heading {
     margin-bottom: 25px;
 }
@@ -7614,7 +7622,7 @@ section {
 }
 /* SInle Team */
 .single-team {
-    padding-top: 90px;
+    /*padding-top: 90px;*/
     padding-bottom: 100px;
 }
 .team-member-img {
@@ -9361,7 +9369,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     padding-bottom: 98px;
   }
   .our-benefits {
-    padding-top: 120px;
+    /*padding-top: 120px;*/
+    padding-top: 55px;
     padding-bottom: 115px;
   }
   .services-benefits {
