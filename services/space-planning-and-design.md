@@ -1,5 +1,5 @@
 ---
-permalink: /services/multi-space-design
+permalink: /services/space-planning-and-design
 layout: services
 ---
 
