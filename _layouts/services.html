@@ -10,8 +10,8 @@ layout: default
                           <li class="{% if page.url == '/services/design-coaching' %} current-menu-item {% endif %}">
                             <a href="/services/design-coaching">Design Coaching</a>
                           </li>
-                          <li class="{% if page.url == '/services/space-design-and-planning' %} current-menu-item {% endif %}">
-                            <a href="/services/space-planning-and-design">Space Design &amp; Planning</a>
+                          <li class="{% if page.url == '/services/space-planning-and-design' %} current-menu-item {% endif %}">
+                            <a href="/services/space-planning-and-design">Space Planning &amp; Design</a>
                           </li>
                           <li class="{% if page.url == '/services/remodeling-and-new-construction' %} current-menu-item {% endif %}">
                             <a href="/services/remodeling-and-new-construction">Remodeling and New Construction</a>
@@ -20,15 +20,15 @@ layout: default
                   </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                {% case page.name %}
-                  {% when 'home.md' %}
+                {% case page.url %}
+                  {% when '/services' %}
                     <h4 class="main-heading">Services</h4>
                     <p>At Rachel Mathai Interior Design, we believe that every space deserves thoughtful design. We are committed to providing approachable interior design services, which is why we offer a variety of options to suit your needs.</p>
-                  {% when 'design-coaching.md' %}
+                  {% when '/services/design-coaching' %}
                     <h4>Design Coaching</h4>
                     <em>Cost: 1 hour sessions @ $150/hr</em>
                     <p>If you’ve ever wanted professional insights on your design challenges, consider a coaching appointment. We can meet virtually or in person (if you’re local) to discuss your design issues, brainstorm ideas, and get feedback. The 1 hour coaching session is priced at $150. Additional coaching can be purchased as needed.</p>
-                  {% when 'space-planning-and-design.md' %}
+                  {% when '/services/space-planning-and-design' %}
                     <h4>Space Planning &amp; Design</h4>
                     <em>Cost: Starting at $1,500</em>
                     <p>Transform your space with our comprehensive design service, with packages starting at $1,500. Fee proposal provided after initial consultation. Here’s what’s included:</p>
@@ -41,8 +41,7 @@ layout: default
                       <li>Convenient, Clickable Shopping List for Purchases</li>
                       <li>Ordering Services <em>(optional)</em>. Includes placing orders with trade discount (up to 20%), tracking orders and facilitating installations. Billed at  $150/hr. Estimate available upon request.</li>
                     </ul>
-                  {% when 'multi-space-design.md' %}
-                  {% when 'remodeling-and-new-construction.md' %}
+                  {% when '/services/remodeling-and-new-construction' %}
                     <h4>Remodeling and New Construction Design</h4>
                     <em>Cost: Provided after initial consultation</em>
                     <p>This service offers comprehensive design support for projects that modify your home's layout, whether through remodeling existing spaces or adding new rooms. Pricing is determined by square footage and project complexity. Following an initial consultation (billed at $150/hour), you'll receive a detailed scope of work and a fee proposal. The service includes:</p>

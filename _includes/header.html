@@ -106,11 +106,17 @@
                                                                 <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-portfolio-jellandchill">Jell &amp; Chill</a></li>
                                                                 <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen" data-lta-event="nav-portfolio-began">Begen</a></li>
                                                             </ul>
-                                                        </li>
+                                                      </li>
                                                       <li class="">
                                                             <a href="/house-proud/wyoming" data-lta-event="nav-houseproud">House Proud</a></li>
-                                                      <li class="">
-                                                            <a href="/services" data-lta-event="nav-services">Services</a></li>
+                                                      <li class="menu-item-has-children ">
+                                                            <a href="/services" data-lta-event="nav-services">Services</a>
+                                                            <ul class="sub-menu">
+                                                                <li class="{% if page.url == '/services/design-coaching' %} current-menu-item {% endif %}"><a href="/services/design-coaching" data-lta-event="nav-services-designcoaching">Design Coaching</a></li>
+                                                                <li class="{% if page.url == '/services/space-planning-and-design' %} current-menu-item {% endif %}"><a href="/services/space-planning-and-design" data-lta-event="nav-services-spaceplanninganddesign">Space Planning &amp; Design</a></li>
+                                                                <li class="{% if page.url == '/services/remodeling-and-new-construction' %} current-menu-item {% endif %}"><a href="/services/remodeling-and-new-construction" data-lta-event="nav-services-remodelingandnewconstruction">Remodeling &amp; New Construction</a></li>
+                                                            </ul>
+                                                      </li>
                                                       <li class="">
                                                             <a href="/about" data-lta-event="nav-about">About</a></li>
                                                     </ul>
@@ -150,7 +156,7 @@
                                                 <li class="{% if page.url == '/' %} current-menu-item current-menu-ancestor {% endif %}">
                                                     <a href="/" data-lta-event="nav-mobile-home">Home</a></li>
                                                 <li class="menu-item-has-children current-menu-item current-menu-ancestor">
-                                                  <a>Portfolio</a>
+                                                  <a href="/portfolio/thornton" data-lta-event="nav-mobile-portfolio">Portfolio</a>
                                                   <ul class="sub-menu d-block">
                                                       <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton" data-lta-event="nav-mobile-thornton">Thornton</a></li>
                                                       <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-mobile-jellandchill">Jell &amp; Chill</a></li>
@@ -159,8 +165,13 @@
                                                 </li>
                                                 <li class="">
                                                       <a href="/house-proud/wyoming" data-lta-event="nav-mobile-houseproud">House Proud</a></li>
-                                                <li class="">
+                                                <li class="menu-item-has-children current-menu-item current-menu-ancestor">
                                                       <a href="/services" data-lta-event="nav-mobile-services">Services</a></li>
+                                                            <ul class="sub-menu d-block">
+                                                                <li class="{% if page.url == '/services/design-coaching' %} current-menu-item {% endif %}"><a href="/services/design-coaching" data-lta-event="nav-mobile-services-designcoaching">Design Coaching</a></li>
+                                                                <li class="{% if page.url == '/services/space-planning-and-design' %} current-menu-item {% endif %}"><a href="/services/space-planning-and-design" data-lta-event="nav-mobile-services-spaceplanninganddesign">Space Planning &amp; Design</a></li>
+                                                                <li class="{% if page.url == '/services/remodeling-and-new-construction' %} current-menu-item {% endif %}"><a href="/services/remodeling-and-new-construction" data-lta-event="nav-mobile-services-remodelingandnewconstruction">Remodeling &amp; New Construction</a></li>
+                                                            </ul>
                                                 <li class="">
                                                       <a href="/about" data-lta-event="nav-mobile-about">About</a></li>
                                             </ul>
