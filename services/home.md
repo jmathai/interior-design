@@ -11,7 +11,7 @@ layout: default
                 <p>At Rachel Mathai Interior Design, we believe that every space deserves thoughtful design. We are committed to providing approachable interior design services, which is why we offer a variety of options to suit your needs.</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center packages">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="icon-box text-center">
                     <div class="content-box">

@@ -4034,6 +4034,11 @@ object {
 .services h1 {
   font-size: 1.8rem;
 }
+@media (max-width: 767px) {
+  .services .packages .icon-box {
+    text-align: left !important;
+  }
+}
 .service-box .image-box {
   position: relative;
   overflow: hidden;
@@ -10284,6 +10289,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 .footer-list-item:last-child {
     padding-bottom: 0;
+}
+.footer-list-item svg.houzz {
+  height:16px;
+  margin-top:-5px;
 }
 .footer-widget-subcribe h6{
     margin-bottom: 28px;
