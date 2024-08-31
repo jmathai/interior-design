@@ -103,6 +103,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - theme-html/
+  - documentation_theratio/
+  - plugins/
+  - jekyll/
 
 # Robots are welcome
 include:
