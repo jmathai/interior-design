@@ -9,6 +9,7 @@ layout: default
             <div class="col-lg-12">
                 <h1>Services</h1>
                 <p>At Rachel Mathai Interior Design, we believe that every space deserves thoughtful design. We are committed to providing approachable interior design services, which is why we offer a variety of options to suit your needs.</p>
+                <p><a href="/contact" data-lta-event="services-discovery">Contact us</a> if you'd like to have a free discovery meeting to share more about your project and learn about our process. Or learn more about our packages below.</p>
             </div>
         </div>
         <div class="row justify-content-center packages">

@@ -1,0 +1,41 @@
+---
+permalink: /book-appointment
+layout: default
+title: Book Appointment
+---
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div class="alert alert-success d-none" id="email-success-msg" role="alert">
+                          Thanks for reaching out. The next step is to book a free discovery call.
+                        </div>
+                        <div class="alert alert-danger d-none" id="email-success-msg" role="alert">
+                          Sorry, something went wrong. Please reach out directly at <a href="mailto:hello@rachelmathai.com">hello@rachelmathai.com</a>.
+                        </div>
+                        <div>
+                          <h1>Book a Free Discovery Call</h1>
+                          <p class="font14">A discovery call is where you can share more details about your project. Choose from any of the available time slots below.</p>
+                          <p>
+                            <!-- Calendly inline widget begin -->
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/hello-rachelmathai/discovery-call?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=6b8f69" style="min-width:320px;height:700px;"></div>
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                            <!-- Calendly inline widget end -->
+                          </p>
+                          <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              if(location.search.indexOf('email-received') != -1) {
+                document.getElementById('email-success-msg').classList.remove('d-none');
+              } else if(location.search.indexOf('email-failed') != -1) {
+                document.getElementById('email-failed-msg').classList.remove('d-none');
+              }
+          });
+        </script>

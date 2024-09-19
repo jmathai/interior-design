@@ -1095,7 +1095,7 @@ td {
 --------------------------------------------------------------*/
 /* #button Group
 ================================================== */
-.octf-btn {
+/*.octf-btn {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -1157,8 +1157,35 @@ td {
 .octf-btn:hover:after, .octf-btn:active:after, .octf-btn:focus:after {
   height: 0;
 }
+*/
+.octf-btn {
+    background-color: #6b8f69;  /* Clover green */
+    color: white;               /* White text for contrast */
+    padding: 12px 24px;         /* Padding for a balanced, clickable button */
+    font-size: 16px;            /* Comfortable text size */
+    border: none;               /* No border for a clean look */
+    border-radius: 8px;         /* Rounded corners to match the clover shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-.dark-scheme .octf-btn {
+.octf-btn:hover {
+    background-color: #86a97e;  /* Slightly lighter shade on hover */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.octf-btn:active {
+    background-color: #5e7e5e;  /* Darker shade when the button is clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tighter shadow on click */
+}
+
+.octf-btn:focus {
+    outline: none;              /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(107, 143, 105, 0.5); /* Soft green focus ring */
+}
+
+/*.dark-scheme .octf-btn {
   background: #fff;
   color: #1a1a1a;
 }
@@ -1199,7 +1226,7 @@ td {
   background: #fff;
   color: #1a1a1a;
   border-color: #fff;
-}
+}*/
 
 input[type=text],
 input[type=email],
@@ -1347,7 +1374,7 @@ a {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
-  color: #1a1a1a;
+  color: #6b8f69;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -3163,7 +3190,7 @@ a:hover, a:active {
 .comment-form input[type=email] {
   width: 100%;
 }
-.comment-form .octf-btn {
+/*.comment-form .octf-btn {
   margin-top: 10px;
 }
 .comment-form .octf-btn:before, .comment-form .octf-btn:after {
@@ -3171,7 +3198,7 @@ a:hover, a:active {
 }
 .comment-form .octf-btn:hover {
   border: 1px solid;
-}
+}*/
 
 /*Version Dark*/
 .dark-scheme .comments-area .comment-item {
@@ -3567,10 +3594,10 @@ a:hover, a:active {
     padding-left: 50px;
   }
 
-  .comment-form .octf-btn {
+  /*.comment-form .octf-btn {
     font-size: 12px;
     padding: 15px 28px;
-  }
+  }*/
 }
 @media only screen and (max-width: 600px) {
   .single-post .entry-content {
@@ -4157,12 +4184,12 @@ object {
 .cs-form > span.wpcf7-form-control-wrap .wpcf7-text::placeholder {
   color: #555555;
 }
-.cs-form .octf-btn {
+/*.cs-form .octf-btn {
   padding: 15px 34px;
 }
 .cs-form .octf-btn:before, .cs-form .octf-btn:after {
   display: none;
-}
+}*/
 .cs-form + div {
   max-width: 475px;
   margin-left: auto !important;
@@ -4196,9 +4223,9 @@ object {
     margin: 0 auto;
     display: block;
   }
-  .cs-form .octf-btn {
+  /*.cs-form .octf-btn {
     margin-top: 15px;
-  }
+  }*/
 }
 /*--------------------------------------------------------------
 ## Contact-info
@@ -5244,7 +5271,7 @@ object {
 .ot-pricing-table .inner-table .details.no-icon ul li.active:after {
   display: none;
 }
-.ot-pricing-table .octf-btn {
+/*.ot-pricing-table .octf-btn {
   border-color: #1a1a1a;
   background: #fff;
   color: #000;
@@ -5256,7 +5283,7 @@ object {
 .ot-pricing-table .octf-btn:hover {
   background: #1a1a1a;
   color: #fff;
-}
+}*/
 .ot-pricing-table.is-featured .inner-table {
   background: #1a1a1a;
   color: #fff;
@@ -5275,9 +5302,9 @@ object {
 .ot-pricing-table.is-featured .inner-table .details ul li.active {
   color: #fff;
 }
-.ot-pricing-table.is-featured .octf-btn:hover {
+/*.ot-pricing-table.is-featured .octf-btn:hover {
   border-color: rgba(255, 255, 255, 0.15);
-}
+}*/
 .ot-pricing-table:hover {
   -webkit-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
@@ -5577,7 +5604,7 @@ object {
 .member-form input[type=email] {
   width: 100%;
 }
-.member-form .octf-btn {
+/*.member-form .octf-btn {
   margin-top: 10px;
 }
 .member-form .octf-btn:before, .member-form .octf-btn:after {
@@ -5585,7 +5612,7 @@ object {
 }
 .member-form .octf-btn:hover {
   border: 1px solid;
-}
+}*/
 
 @media (min-width: 1025px) and (max-width: 1300px) {
   .team-wrap h4 {
@@ -5941,12 +5968,12 @@ object {
   text-align: center;
   clear: both;
 }
-.btn-block .octf-btn {
+/*.btn-block .octf-btn {
   margin-top: 60px;
 }
 .btn-block .octf-btn:after, .btn-block .octf-btn:before {
   display: none;
-}
+}*/
 
 /**** isotope filtering ****/
 .project_filters {
@@ -6207,11 +6234,11 @@ object {
 .wpcf7 .main-form button:before, .wpcf7 .main-form button:after {
   display: none;
 }
-.wpcf7 .main-form button:hover {
+/*.wpcf7 .main-form button:hover {
   background: #fff;
   color: #1a1a1a;
   border-color: #1a1a1a;
-}
+}*/
 .wpcf7 .main-form p {
   margin-bottom: 15px;
 }
@@ -6340,9 +6367,9 @@ object {
     width: calc( 100% + 10px );
   }
 
-  .rs-layer.octf-btn:before, .rs-layer.octf-btn:after {
+  /*.rs-layer.octf-btn:before, .rs-layer.octf-btn:after {
     display: none;
-  }
+  }*/
 }
 @media (max-width: 1024px) {
   .grid-lines .g-line-vertical {
@@ -7634,12 +7661,12 @@ section {
     padding-top: 80px;
     padding-bottom: 120px;
 }
-.octf-btn.border-hover-dark:hover {
+/*.octf-btn.border-hover-dark:hover {
     border-color: #1A1A1A;
 }
 .octf-btn.border-hover-light:hover {
     border-color: #fff;
-}
+}*/
 /* SInle Team */
 .single-team {
     /*padding-top: 90px;*/
@@ -8271,7 +8298,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     color: #fff;
     font-family: 'Raleway';
 }
-.rev-btn .octf-btn:before, .rev-btn .octf-btn:after {
+/*.rev-btn .octf-btn:before, .rev-btn .octf-btn:after {
     display: none;
 }
 .rev-btn .octf-btn {
@@ -8279,7 +8306,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     line-height: 25px;
     padding: 15px 36px;
     border-color: transparent;
-}
+}*/
 .nav-home-3.tparrows, .nav-home-5.tparrows {
   width: 70px;
   height: 70px;
@@ -8324,16 +8351,16 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   }
 }
 @media (max-width: 992px) {
-  .rev-btn .octf-btn {
+  /*.rev-btn .octf-btn {
     font-size: 12px;
     line-height: 23px;
     padding: 11px 27px;
-  }
+  }*/
 }
 @media (max-width: 992px) {
-  .rev-btn .octf-btn {
+  /*.rev-btn .octf-btn {
     display: none;
-  }
+  }*/
 }
 .nav-home-1.tparrows{
   width: 90px;
@@ -8398,9 +8425,9 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .nav-home-2.tparrows.tp-leftarrow:before {
   content: "\f106";
 }
-.rev-btn .octf-btn:hover {
+/*.rev-btn .octf-btn:hover {
     background-color: #fff;
-}
+}*/
 .banner-desc-1 {
     position: absolute;
     left: 0;
@@ -9034,7 +9061,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     text-transform: uppercase;
     font-family: "Titillium Web",sans-serif;
 }
-.de-video-content .octf-btn {
+/*.de-video-content .octf-btn {
     background-color: transparent;
     border: 2px solid #fff;
     padding: 15px 30px;
@@ -9049,7 +9076,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .de-video-content .octf-btn:hover, .de-video-content .octf-btn:focus {
     background-color: #fff;
     color: #1a1a1a;
-}
+}*/
 .de-video-overlay {
     position: absolute;
     width: 100%;
@@ -9749,9 +9776,9 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   .tabs-light .tab-link {
     min-width: 100%;
   }
-  .octf-btn {
+  /*.octf-btn {
     padding: 12px 20px;
-  }
+  }*/
   .clients-process {
     padding-bottom: 60px;
   }

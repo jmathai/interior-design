@@ -1,0 +1,56 @@
+---
+permalink: /contact
+layout: default
+title: Contact
+---
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6">
+                        <div>
+                          <h1>Contact Us</h1>
+                          <p class="font14">Tell us a little about what you are looking for.</p>
+                          <form  name="ajax-form" action="https://fiers.jmathai.com/rmid/contact" method="post" class="wpcf7">
+                              <div class="main-form">
+                                  <p>
+                                      <input type="text" id="name" name="full-name" value="" size="40" class="" aria-invalid="false" placeholder="Full Name *" required="">
+                                  </p>
+                                  <p>
+                                      <input type="email" name="email" id="email" value="" size="40" class="" aria-invalid="false" placeholder="Email *" required="">
+                                  </p>
+                                  <p>
+                                      <input type="text" name="project-address" id="project-address" value="" size="40" class="" aria-invalid="false" placeholder="Project Address *" required="">
+                                  </p>
+                                  <p>
+                                      <textarea name="message" id="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="Message..."></textarea>
+                                  </p>
+                                  <p class="woocommerce-billing-fields">
+                                      <select name="service">
+                                        <option value="None Selected">Which service are you interested in?</option>
+                                        <option value="Coaching">Coaching</option>
+                                        <option value="Space  Planning and Design">Space  Planning and Design</option>
+                                        <option value="Remodeling or New Construction">Remodeling or New Construction</option>
+                                        <option value="I don't know yet">I don't know yet</option>
+                                      </select>
+                                  </p>
+                                  <p class="woocommerce-billing-fields">
+                                      <select name="start-date">
+                                        <option value="None Selected">What's your start date?</option>
+                                        <option value="As soon as possible">As soon as possible</option>
+                                        <option value="In 3 months">In 3 months</option>
+                                        <option value="In one year">In one year</option>
+                                        <option value="I don't know yet">I don't know yet</option>
+                                      </select>
+                                  </p>
+                                  <input type="hidden" name="redirect" value="{{ site.url }}/book-appointment">
+                                  <p><button type="submit" id="send" class="octf-btn" data-lta-event="contact-send">Send Message</button></p>
+                              </div>
+                          </form>
+                          <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </div>

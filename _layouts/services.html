@@ -21,13 +21,11 @@ layout: default
               </div>
               <div class="col-lg-6 col-md-12">
                 {% case page.url %}
-                  {% when '/services' %}
-                    <h4 class="main-heading">Services</h4>
-                    <p>At Rachel Mathai Interior Design, we believe that every space deserves thoughtful design. We are committed to providing approachable interior design services, which is why we offer a variety of options to suit your needs.</p>
                   {% when '/services/design-coaching' %}
                     <h4>Design Coaching</h4>
                     <em>Cost: 1 hour sessions @ $150/hr</em>
                     <p>If you’ve ever wanted professional insights on your design challenges, consider a coaching appointment. We can meet virtually or in person (if you’re local) to discuss your design issues, brainstorm ideas, and get feedback. The 1 hour coaching session is priced at $150. Additional coaching can be purchased as needed.</p>
+                    <p><a href="/contact"  data-lta-event="services-request-coaching">Request design coaching</a></p>
                   {% when '/services/space-planning-and-design' %}
                     <h4>Space Planning &amp; Design</h4>
                     <em>Cost: Starting at $1,500</em>
@@ -41,6 +39,7 @@ layout: default
                       <li>Convenient, Clickable Shopping List for Purchases</li>
                       <li>Ordering Services <em>(optional)</em>. Includes placing orders with trade discount (up to 20%), tracking orders and facilitating installations. Billed at  $150/hr. Estimate available upon request.</li>
                     </ul>
+                    <p><a href="/contact"  data-lta-event="services-request-planning">Inquire about Space Planning &amp; Design</a></p>
                   {% when '/services/remodeling-and-new-construction' %}
                     <h4>Remodeling and New Construction Design</h4>
                     <em>Cost: Provided after initial consultation</em>
@@ -54,6 +53,7 @@ layout: default
                       <li>Project Management</li>
                       <li>Installation and Designer Styling</li>
                     </ul>
+                    <p><a href="/contact"  data-lta-event="services-request-remodeling">Inquire about Remodeling &amp; New Construction Design</a></p>
                 {% endcase %}
               </div>
           </div>
