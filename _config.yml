@@ -105,7 +105,6 @@ exclude:
   - CNAME
   - theme-html/
   - documentation_theratio/
-  - plugins/
   - jekyll/
 
 # Robots are welcome

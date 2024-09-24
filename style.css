@@ -1157,33 +1157,8 @@ td {
 .octf-btn:hover:after, .octf-btn:active:after, .octf-btn:focus:after {
   height: 0;
 }
+moved to bottom
 */
-.octf-btn {
-    background-color: #6b8f69;  /* Clover green */
-    color: white;               /* White text for contrast */
-    padding: 12px 24px;         /* Padding for a balanced, clickable button */
-    font-size: 16px;            /* Comfortable text size */
-    border: none;               /* No border for a clean look */
-    border-radius: 8px;         /* Rounded corners to match the clover shape */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-    cursor: pointer;            /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.octf-btn:hover {
-    background-color: #86a97e;  /* Slightly lighter shade on hover */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-}
-
-.octf-btn:active {
-    background-color: #5e7e5e;  /* Darker shade when the button is clicked */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tighter shadow on click */
-}
-
-.octf-btn:focus {
-    outline: none;              /* Remove default focus outline */
-    box-shadow: 0 0 0 3px rgba(107, 143, 105, 0.5); /* Soft green focus ring */
-}
 
 /*.dark-scheme .octf-btn {
   background: #fff;
@@ -10472,4 +10447,31 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   ul.services-menu {
     margin: 20px 0;
   }
+}
+
+button.octf-btn, a.octf-btn, .octf-btn {
+    background-color: #6b8f69;  /* Clover green */
+    color: white !important;               /* White text for contrast */
+    padding: 12px 24px;         /* Padding for a balanced, clickable button */
+    font-size: 16px;            /* Comfortable text size */
+    border: none;               /* No border for a clean look */
+    border-radius: 8px;         /* Rounded corners to match the clover shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.octf-btn:hover {
+    background-color: #86a97e;  /* Slightly lighter shade on hover */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.octf-btn:active {
+    background-color: #5e7e5e;  /* Darker shade when the button is clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tighter shadow on click */
+}
+
+.octf-btn:focus {
+    outline: none;              /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(107, 143, 105, 0.5); /* Soft green focus ring */
 }

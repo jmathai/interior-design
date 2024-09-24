@@ -11,7 +11,7 @@ title: Contact
                         <div>
                           <h1>Contact Us</h1>
                           <p class="font14">Tell us a little about what you are looking for.</p>
-                          <form  name="ajax-form" action="https://fiers.jmathai.com/rmid/contact" method="post" class="wpcf7">
+                          <form  id="contact-form" action="https://fiers.jmathai.com/rmid/contact" method="post" class="wpcf7">
                               <div class="main-form">
                                   <p>
                                       <input type="text" id="name" name="full-name" value="" size="40" class="" aria-invalid="false" placeholder="Full Name *" required="">
@@ -44,6 +44,8 @@ title: Contact
                                       </select>
                                   </p>
                                   <input type="hidden" name="redirect" value="{{ site.url }}/book-appointment">
+                                  <input type="hidden" name="timestamp" value="{{ site.time }}">
+                                  <input type="hidden" name="sender" value=" {{ site.url }}">
                                   <p><button type="submit" id="send" class="octf-btn" data-lta-event="contact-send">Send Message</button></p>
                               </div>
                           </form>

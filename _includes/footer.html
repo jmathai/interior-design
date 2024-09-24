@@ -97,6 +97,24 @@
             });
         })(jQuery);
     </script>  -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const contactForm = document.querySelector('form#contact-form');
+        if(contactForm) {
+          const tsFld = contactForm.querySelector('input[name=timestamp]');
+          tsFld.value = ''+Date.now();
+          contactForm.addEventListener('submit', (e) => {
+              const emailFld = contactForm.querySelector('input[name=email]');
+              const senderFld = contactForm.querySelector('input[name=sender]');
+              let maxChars = tsFld.value.charAt(tsFld.value.length-1);
+              if(maxChars > emailFld.value.length - 1) {
+                maxChars = emailFld.value.length - 1;
+              }
+              senderFld.value = emailFld.value.charAt(maxChars)
+          });
+        }
+      });
+    </script>
 </body>
 </html>
 
