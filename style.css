@@ -10475,3 +10475,20 @@ button.octf-btn, a.octf-btn, .octf-btn {
     outline: none;              /* Remove default focus outline */
     box-shadow: 0 0 0 3px rgba(107, 143, 105, 0.5); /* Soft green focus ring */
 }
+/* added from woocommerce.css */
+.woocommerce-billing-fields__field-wrapper label {
+    display: block;
+}
+.woocommerce-billing-fields__field-wrapper input, .woocommerce-billing-fields select, .woocommerce-shipping-fields select {
+    width: 100%;
+}
+.woocommerce-billing-fields select, .woocommerce-shipping-fields select {
+    height: 50px;
+    padding: 10px 20px;
+}
+.woocommerce-billing-fields__field-wrapper .required {
+    color: red;
+    font-weight: 700;
+    border: 0!important;
+    text-decoration: none;
+}
