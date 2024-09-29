@@ -29,7 +29,7 @@ rm_resize() {
           dimensions='2048x2048';;
         *) ;;
       esac
-      magick convert $file -resize $dimensions -density 72 -quality 75 "${TW_IMAGE_PATH}/${image_name}.${ext}"
+      magick $file -resize $dimensions -density 72 -quality 75 "${TW_IMAGE_PATH}/${image_name}.${ext}"
     done
   else
     echo "File does not exist: $file"
