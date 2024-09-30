@@ -44,9 +44,9 @@
     <link rel="stylesheet" href="style.css?{{ site.time | date: '%Y%m%d' }}" />
     <link rel="stylesheet" href="css/light.css?{{ site.time | date: '%Y%m%d' }}" />
     <!-- REVOLUTION SLIDER CSS -->
-    <!--<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">   -->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/settings.css">
     <!-- REVOLUTION NAVIGATION STYLE -->
-    <!--<link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">-->
+    <link rel="stylesheet" type="text/css" href="plugins/revolution/revolution/css/navigation.css">
     <style>
       body {
         visibility: hidden;
@@ -111,9 +111,10 @@
                                                       <li class="menu-item-has-children ">
                                                           <a href="/portfolio/thornton" data-lta-event="nav-portfolio">Portfolio</a>
                                                             <ul class="sub-menu">
+                                                                <li class="{% if page.url == '/portfolio/congress-run' %} current-menu-item {% endif %}"><a href="/portfolio/congress-run" data-lta-event="nav-portfolio-congressrun">Congress Run</a></li>
                                                                 <li class="{% if page.url == '/portfolio/thornton' %} current-menu-item {% endif %}"><a href="/portfolio/thornton" data-lta-event="nav-portfolio-thornton">Thornton</a></li>
-                                                                <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-portfolio-jellandchill">Jell &amp; Chill</a></li>
                                                                 <li class="{% if page.url == '/portfolio/begen' %} current-menu-item {% endif %}"><a href="/portfolio/begen" data-lta-event="nav-portfolio-began">Begen</a></li>
+                                                                <li class="{% if page.url == '/portfolio/jell-and-chill' %} current-menu-item {% endif %}"><a href="/portfolio/jell-and-chill" data-lta-event="nav-portfolio-jellandchill">Jell &amp; Chill</a></li>
                                                             </ul>
                                                       </li>
                                                       <li class="">

@@ -50,6 +50,30 @@ layout: default
     {% assign project_date = 'May 2023' %}
     {% assign project_scope = 'Full kitchen remodel, kids bath remodel, expansion and remodel of primary bath, interior and exterior paint selection, replaced nailed down hardwood flooring with European engineered hardwood flooring, replaced all window coverings, light fixtures and switches as well as interior and exterior door hardware. 
 Submitted necessary documents for permitting including all construction documents. ' %}
+  {% when 'congress-run.md' %}
+
+    {% assign header_photo = 'hp-congress-run-8462-extralarge.jpg' %}
+    {% assign photos = '' | split: '' %}
+    {% assign photos1 = 'hp-congress-run-8363-extralarge.jpg,hp-congress-run-8408-extralarge.jpg,hp-congress-run-8415-extralarge.jpg' | split: ',' %}
+    {% assign photos2 = 'hp-congress-run-8373-extralarge.jpg,hp-congress-run-8378-extralarge.jpg,hp-congress-run-8403-extralarge.jpg' | split: ',' %}
+    {% assign photos3 = 'hp-congress-run-8397-landscape-extralarge.jpg' | split: ',' %}
+    {% assign photos4 = 'hp-congress-run-8426-extralarge.jpg,hp-congress-run-8435-extralarge.jpg,hp-congress-run-8436-extralarge.jpg,' | split: ',' %}
+    {% assign photos5 = 'hp-congress-run-8347-square-extralarge.jpg' | split: ',' %}
+    {% assign photos6 = 'hp-congress-run-8454-square-extralarge.jpg,hp-congress-run-8466-square-extralarge.jpg' | split: ',' %}
+    {% assign photos7 = 'hp-congress-run-8462-extralarge.jpg' | split: ',' %}
+    {% assign photos8 = 'hp-congress-run-8471-extralarge.jpg,hp-congress-run-8478-extralarge.jpg' | split: ',' %}
+    {% assign photos9 = 'hp-congress-run-8496-extralarge.jpg' | split: ',' %}
+    {% assign photos10 = 'hp-congress-run-8484-extralarge.jpg,hp-congress-run-8501-extralarge.jpg' | split: ',' %}
+    {% assign photos11 = 'hp-congress-run-8498-extralarge.jpg,hp-congress-run-8500-extralarge.jpg' | split: ',' %}
+    {% assign photos12 = 'hp-congress-run-8532-extralarge.jpg,hp-congress-run-8519-extralarge.jpg' | split: ',' %}
+    {% assign photos13 = 'hp-congress-run-8507-square-extralarge.jpg' | split: ',' %}
+    {% assign photos14 = 'hp-congress-run-8316-extralarge.jpg,hp-congress-run-8318-extralarge.jpg,hp-congress-run-8320-extralarge.jpg' | split: ',' %}
+    {% assign photos = photos | push: photos1 | push: photos2 | push: photos3 | push: photos4 | push: photos5 | push: photos6  | push: photos7 | push: photos8 | push: photos9 | push: photos10 | push: photos11 | push: photos12 | push: photos13 | push: photos14 | push: photos15%}
+    {% assign project_designer = 'Rachel Mathai' %}
+    {% assign project_type = 'Interior Remodel + Permitting' %}
+    {% assign project_date = 'May 2023' %}
+    {% assign project_scope = 'Full kitchen remodel, kids bath remodel, expansion and remodel of primary bath, interior and exterior paint selection, replaced nailed down hardwood flooring with European engineered hardwood flooring, replaced all window coverings, light fixtures and switches as well as interior and exterior door hardware. 
+Submitted necessary documents for permitting including all construction documents. ' %}
 {% endcase %}
 
         <div id="content" class="site-content">
@@ -62,7 +86,7 @@ Submitted necessary documents for permitting including all construction document
             </div>
             <section class="portfolio-detail p-0">
                 <div class="container">
-                    <div class="row text-center">
+                    <!--<div class="row text-center">
                         <div class="space-40"></div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 d-none d-lg-block"></div>
                         <div class="col-lg-2 col-md-4 col-sm-12 col-4">
@@ -91,7 +115,7 @@ Submitted necessary documents for permitting including all construction document
                             <h4>Project Scope</h4>
                             <p>{{ project_scope }}.</p>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row">
                         <div class="col-md-12 image-gallery">
                             <div class="space-10"></div>
