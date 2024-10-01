@@ -400,6 +400,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
   color: #1a1a1a;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .dark-scheme h1, .dark-scheme h2, .dark-scheme h3, .dark-scheme h4, .dark-scheme h5, .dark-scheme h6 {
