@@ -22,6 +22,7 @@ layout: default
     {% assign project_type = 'Home Addition + Interior Remodel' %}
     {% assign project_date = 'May 2022' %}
     {% assign project_scope = 'Space planning and design of 900 sf home addition which included a relocated kitchen, great room, primary bedroom and bathroom with walk in closet. Remodeled existing laundry room to create a functional mudroom with secondary side entrance to house. Replaced all interior doors and hardware as well as casing and trim. Interior and exterior paint selections.' %}
+    {% assign className = 'thornton' %}
   {% when 'jell-and-chill.md' %}
 
     {% assign header_photo = 'jell-and-chill-2-extralarge.jpg' %}
@@ -34,6 +35,7 @@ layout: default
     {% assign project_type = 'Commercial Design of Mall Kiosk' %}
     {% assign project_date = 'May 2023' %}
     {% assign project_scope = 'Designed mall kiosk for growing smoothie shop. Created construction documents and renderings for mall approval. Worked with mall designers for approval of all selected finish materials. Procured signage, display screens and point of sale devices.' %}
+    {% assign className = 'jellandchill' %}
   {% when 'begen.md' %}
 
     {% assign header_photo = 'began-kitchen-3-extralarge.jpg' %}
@@ -50,11 +52,12 @@ layout: default
     {% assign project_date = 'May 2023' %}
     {% assign project_scope = 'Full kitchen remodel, kids bath remodel, expansion and remodel of primary bath, interior and exterior paint selection, replaced nailed down hardwood flooring with European engineered hardwood flooring, replaced all window coverings, light fixtures and switches as well as interior and exterior door hardware. 
 Submitted necessary documents for permitting including all construction documents. ' %}
+    {% assign className = 'began' %}
   {% when 'congress-run.md' %}
 
     {% assign header_photo = 'hp-congress-run-8462-extralarge.jpg' %}
     {% assign photos = '' | split: '' %}
-    {% assign photos1 = 'hp-congress-run-8363-extralarge.jpg,hp-congress-run-8408-extralarge.jpg,hp-congress-run-8415-extralarge.jpg' | split: ',' %}
+    {% assign photos1 = 'hp-congress-run-8408-extralarge.jpg,hp-congress-run-8415-extralarge.jpg,hp-congress-run-8363-extralarge.jpg' | split: ',' %}
     {% assign photos2 = 'hp-congress-run-8373-extralarge.jpg,hp-congress-run-8378-extralarge.jpg,hp-congress-run-8403-extralarge.jpg' | split: ',' %}
     {% assign photos3 = 'hp-congress-run-8397-landscape-extralarge.jpg' | split: ',' %}
     {% assign photos4 = 'hp-congress-run-8426-extralarge.jpg,hp-congress-run-8435-extralarge.jpg,hp-congress-run-8436-extralarge.jpg,' | split: ',' %}
@@ -74,9 +77,10 @@ Submitted necessary documents for permitting including all construction document
     {% assign project_date = 'May 2023' %}
     {% assign project_scope = 'Full kitchen remodel, kids bath remodel, expansion and remodel of primary bath, interior and exterior paint selection, replaced nailed down hardwood flooring with European engineered hardwood flooring, replaced all window coverings, light fixtures and switches as well as interior and exterior door hardware. 
 Submitted necessary documents for permitting including all construction documents. ' %}
+    {% assign className = 'congressrun' %}
 {% endcase %}
 
-        <div id="content" class="site-content">
+<div id="content" class="site-content portfolio {{ className }}">
           <div class="page-header dtable text-center header-transparent pheader-portfolio-detail" style="background-image: url(/assets/image/custom/{{ header_photo }});">
                 <div class="dcell">
                     <div class="container">

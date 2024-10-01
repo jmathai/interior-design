@@ -8628,8 +8628,8 @@ ul.style-default li:last-child, ol.style-default li:last-child {
     background-image: url(https://via.placeholder.com/1920x1415.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 105px;
-    padding-bottom: 120px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .ot-heading.s-light:before {
     border-color: #FFF;
@@ -9370,7 +9370,11 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 @media (max-width: 767px){
   .cta-2 h2 {
-    font-size: 55px;
+    font-size: 35px;
+  }
+
+  .cta-2 p {
+    font-size: 14px;
   }
 }
 @media (min-width: 567px){
@@ -10449,6 +10453,7 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 }
 .house-proud .image-gallery h6 {
   margin-bottom: 0;
+  font-size: .97em;
 }
 
 .portfolio.congressrun .pheader-portfolio-detail {
