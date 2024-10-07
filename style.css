@@ -10461,6 +10461,21 @@ ul.style-default li:last-child, ol.style-default li:last-child {
   font-size: .97em;
 }
 
+.house-proud ol.superscript {
+  counter-reset: item;
+  list-style-type: none; /* Remove the default list numbers */
+}
+.house-proud ol.superscript li {
+  counter-increment: item;
+  margin-bottom: 0.5em; /* Space between list items */
+}
+.house-proud ol.superscript li::before {
+  content: counter(item);
+  font-size: 0.8em; /* Adjust size to make the superscript smaller */
+  vertical-align: super; /* Move the number up */
+  margin-right: 0.3em; /* Add space between number and text */
+}
+
 .portfolio.congressrun .pheader-portfolio-detail {
   background-position: -127px -269px;
   background-size: 121%;
