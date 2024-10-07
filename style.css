@@ -10437,6 +10437,10 @@ ul.style-default li:last-child, ol.style-default li:last-child {
 .house-proud h2 {
   font-size: 1.4em;
 }
+.house-proud .house-proud-term-header {
+  font-family: "TTDrugs", sans-serif;
+  font-size: 20px;
+}
 
 .house-proud.wyoming-colonial-revival .pheader-portfolio-detail {
   background-position: 0px -325px;
